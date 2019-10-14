@@ -1,3 +1,4 @@
+//Exemplo 1
 let trackCar = function(carId, city = 'NY'){
     console.log(`Tracking ${carId} in ${city}.`);
 };
