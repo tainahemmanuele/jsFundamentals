@@ -1,7 +1,10 @@
-let trackCar = function(carId, city = 'NY'){
-    console.log(`Tracking ${carId} in ${city}.`);
-};
+let carIds = [
+    { carId: 123, style: 'sedan'},
+    { carId: 456, style: 'convertible'},
+    { carId: 789, style: 'sedan'}
+];
+let result = carIds.find(
+    car => car.carId > 500
+);
 
-console.log(trackCar(123));
-
-console.log( trackCar(123, 'Chicago'));
+console.log(result);
